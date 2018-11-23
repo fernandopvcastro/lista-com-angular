@@ -1,0 +1,19 @@
+<div ng-include="'templates/_header.html'"></div>
+
+<main class="container">
+	<div class="row">
+		<h2>Escolha sua Plataforma</h2>
+	</div>
+
+	<div class="row">
+		<ul class="plan__list">
+			<li class="plan__item" ng-repeat="plataforma in plataformas">
+			    <p class="plan__title">{{plataforma.nome}}</p>
+
+			    <p class="plan__description">{{plataforma.descricao}}</p>
+
+			    <a href="#planos" class="plan__link" ng-click="getInfosPlataforma(plataforma)">Selecionar</a>
+			</li>
+		</ul>
+	</div>
+</main>

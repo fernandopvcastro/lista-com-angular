@@ -1,0 +1,26 @@
+<div ng-include="'templates/_header.html'"></div>
+
+<main class="container">
+	<div class="row">
+		<h2>Escolha seu Plano</h2>
+	</div>
+
+	<div class="row">
+		<ul class="plan__list">
+			<li class="plan__item" ng-repeat="plano in planos" ng-if="plano.ativo">
+			    <p class="plan__title">{{plano.franquia}}</p>
+
+			    <p class="plan__value">por R$ {{plano.valor}}</p>
+
+				<div class="plan__equipment-container" ng-if="plano.aparelho">
+				    <p class="plan__equipment"><strong>Aparelho:</strong> {{plano.aparelho.nome}}</p>
+				    <p class="plan__equipment-value"><strong>Valor:</strong> R$ <span>{{plano.aparelho.valor}}</span></p>
+				    <p class="plan__quota" ng-if="plano.aparelho.numeroParcelas > 1">Em até {{plano.aparelho.numeroParcelas}}x</p>
+				    <p class="plan__quota-value" ng-if="plano.aparelho.valorParcela != false"><strong>Valor da Parcela:</strong> R$ {{plano.aparelho.valorParcela}}</p>
+				</div>
+
+			    <a href="#formulario" class="plan__link" ng-click="getInfosPlano(plano)">Selecionar</a>
+			</li>
+		</ul>
+	</div>
+</main>
