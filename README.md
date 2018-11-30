@@ -1,4 +1,4 @@
-# Teste para Wooza  
+# Lista dinâmica utilizando AngularJs 
 
 Autor: Fernando Castro  
 
