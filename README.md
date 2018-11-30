@@ -8,4 +8,4 @@ Após terminar, rode o comando "gulp" e verá o projeto abrir automaticamente no
 
 Deve possuir a URL: "http://localhost:3000/#/home" ...
 
-Ou também pode ser testado diretamente pelo link: http://fernandopvcastro.com.br/projects/teste-wooza
+Ou também pode ser testado diretamente pelo link: http://fernandopvcastro.com.br/projects/lista-angular
